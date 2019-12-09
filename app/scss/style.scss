@@ -72,14 +72,14 @@
     &-tittle{
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include f700;
         line-height: 72px;
 
     }
     &-text{
         margin-bottom: 50px;
         font-size: 20px;
-        font-weight: 500;
+        @include f500;
         line-height: 30px;
         padding-left: 25px;
         padding-right: 60px;
@@ -96,11 +96,11 @@
             height: 56px;
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             padding: 0 60px 0 25px;
             &::placeholder{
                 color:#90a5ae;
-                font-weight: 500;
+                @include f500;
             }
         }
         button{
@@ -162,7 +162,7 @@
         padding: 10px 30px;
         align-items: center;
         min-height: 90px;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid #e7ecf2;
     }
     &-name{
@@ -181,7 +181,7 @@
     }
     &-price{
         font-size: 20px;
-        font-weight: 700;
+        @include f700;
         color: $bg;
     }
     &-info{
@@ -193,7 +193,7 @@
     }
     &-author{
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         display: flex;
         align-items: center;
         max-width: 245px;
@@ -209,7 +209,7 @@
             }
             span{
                 font-size: 14px;
-                font-weight: 500;
+                @include f500;
             }
             &-star{
                 font-size: 12px;
@@ -268,3 +268,70 @@
 }
 
 //end product-slider
+// start advanteges
+.advanteges{
+    background-color: $bg;
+    padding: 110px 0px;
+    &__title{
+        color:#fff;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
+.advanteges__item{
+    max-width: 370px;
+    text-align: center;
+    
+    &:hover{
+        .advanteges__item-images{
+            background-color: $green;
+            & g{
+                fill:#fff;
+            }
+        }
+        .advanteges__item-title{
+            color:$green;
+        }
+    }
+    &-images{
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        transition: all .5s;
+    }
+    &-title{
+        margin-bottom: 25px;
+        font-size: 24px;
+        color: #fff;
+        @include f500;
+        transition: all .5s;
+    }
+    &-text{
+        font-size: 15px;
+    }
+}
+.icosvg-1{
+    svg{
+        width: 80px;
+    }
+}
+.icosvg-2{
+    svg{
+        width: 86px;
+    }
+}
+.icosvg-3{
+    svg{
+        width: 70px;
+    }
+}
+
+//end advanteges
